@@ -1,5 +1,5 @@
 from django.conf import settings
-from django.db.models.signals import pre_init
+from django.db.models.signals import class_prepared, pre_init
 
 
 def add_db_prefix(sender, **kwargs):
@@ -9,3 +9,4 @@ def add_db_prefix(sender, **kwargs):
 
 
 pre_init.connect(add_db_prefix)
+class_prepared.connect(add_db_prefix)
