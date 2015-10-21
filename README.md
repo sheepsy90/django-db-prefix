@@ -25,7 +25,7 @@ Installation
 
 1. Install using pip:
 
-    pip install git+https://github.com/benslavin/django-db-prefix.git
+    pip install git+https://github.com/maxvyaznikov/django-db-prefix.git
 
 2. Add django_db_prefix at the top of your INSTALLED_APPS list. It is
    recommended that django_db_prefix is the first listed application, but it
