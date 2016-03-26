@@ -10,7 +10,7 @@ def read(fname):
 
 setup(
     name='django-db-prefix',
-    version='1.0.4',
+    version='1.0.5',
     keywords='django database',
     author=u'Ben Slavin <benjamin.slavin@gmail.com>, Denilson Sá <denilsonsa@gmail.com>, Fingul <fingul@gmail.com>',
     packages=['django_db_prefix'],
