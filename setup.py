@@ -10,13 +10,13 @@ def read(fname):
 
 setup(
     name='django-db-prefix',
-    version='1.0',
+    version='1.0.4',
     keywords='django database',
-    author=u'Ben Slavin <benjamin.slavin@gmail.com>, Denilson Sá <denilsonsa@gmail.com>',
+    author=u'Ben Slavin <benjamin.slavin@gmail.com>, Denilson Sá <denilsonsa@gmail.com>, Fingul <fingul@gmail.com>',
     packages=['django_db_prefix'],
-    url='https://github.com/denilsonsa/django-db-prefix',
+    url='https://github.com/fingul/django-db-prefix',
     license='BSD licence, see LICENCE',
-    description='Allow specification of a global, per-app or per-model database table name prefix.',
+    description='Allow specification of a global database table name prefix.',
     long_description=read('README.md'),
     requires=[
         'Django',

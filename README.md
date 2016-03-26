@@ -4,8 +4,7 @@ django_db_prefix
 Project goal
 ------------
 
-Allow specification of a global, per-app or per-model database table
-name prefix.
+Allow specification of a global database table name prefix.
 
 Reason for the project
 ----------------------
@@ -25,21 +24,18 @@ Installation
 
 1. Install using pip:
 
-    pip install git+https://github.com/maxvyaznikov/django-db-prefix.git
+		pip install django-db-prefix
 
 2. Add django_db_prefix at the top of your INSTALLED_APPS list. It is
    recommended that django_db_prefix is the first listed application, but it
    is essential that it be loaded before the initialization of any model you
    expect to be modified.
 
+		INSTALLED_APPS = ['django_db_prefix',] + INSTALLED_APPS
+
 Configuration
 -------------
 
-Three configuration options are allowed: global, per-app or per-model. In all
-cases, the specified prefix will be prepended exactly as provided -- no
-delimiter will be added.
-
-In all cases, behavior is controlled by the `DB_PREFIX` setting.
 
 Global Prefix
 =============
@@ -47,7 +43,7 @@ Global Prefix
 To add a common prefix to all models simply set `DB_PREFIX` to the string that
 you want to be prepended.
 
-    DB_PREFIX = "foo_"
+	DB_PREFIX = "foo_"
 
 For example, for the model bar_app.models.Baz the default table would be:
 `bar_app_baz`
