@@ -4,7 +4,7 @@ django_db_prefix
 Project goal
 ------------
 
-Allow specification of a global database table name prefix.
+Allow specification of a global database table name prefix and affix.
 
 Reason for the project
 ----------------------
@@ -44,8 +44,10 @@ To add a common prefix to all models simply set `DB_PREFIX` to the string that
 you want to be prepended.
 
 	DB_PREFIX = "foo_"
+	DB_AFFIX = "_bar"
 
 For example, for the model bar_app.models.Baz the default table would be:
 `bar_app_baz`
 
 By setting `DB_PREFIX` to `foo_`, the table would be `foo_bar_app_baz`.
+By setting `DB_DB_AFFIX` to `_bar`, the table would be `bar_app_baz_bar`.

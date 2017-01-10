@@ -10,9 +10,9 @@ def read(fname):
 
 setup(
     name='django-db-prefix',
-    version='1.0.5',
+    version='1.0.6',
     keywords='django database',
-    author=u'Ben Slavin <benjamin.slavin@gmail.com>, Denilson Sá <denilsonsa@gmail.com>, Fingul <fingul@gmail.com>',
+    author=u'Ben Slavin <benjamin.slavin@gmail.com>, Denilson Sá <denilsonsa@gmail.com>, Fingul <fingul@gmail.com>, Sheepsy90 <sheepsy90@gmail.com>',
     packages=['django_db_prefix'],
     url='https://github.com/fingul/django-db-prefix',
     license='BSD licence, see LICENCE',
